@@ -10,11 +10,11 @@ You will need to have Docker installed to use the docker image. Alternatively, y
 
 2. Pull the latest image from docker
 
-`docker pull bowenwen\dockerrstudio:latest`
+`docker pull bowenwen/dockerrstudio:latest`
 
 3. Start the docker container
 
-`docker run --rm --name temp_dockerrstudio --env PASSWORD=test -p 8787:8787 bowenwen\dockerrstudio:latest`
+`docker run --rm --name temp_dockerrstudio --env PASSWORD=test -p 8787:8787 bowenwen/dockerrstudio:latest`
 
 You can set your own password and/or add `--volume $pwd:/home/rstudio` to the docker run command to link a folder between your host OS and the docker container.
 
@@ -23,3 +23,5 @@ You can set your own password and/or add `--volume $pwd:/home/rstudio` to the do
 `git clone https://github.com/bowenwen/can_census.git`
 
 5. Now you are ready to explore and play with this demo analysis
+
+To pull data using cancensus package, you need to register for an API at [CensusMapper API](https://censusmapper.ca/users/sign_up)
